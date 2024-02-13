@@ -242,10 +242,18 @@ span {
 }
 
 .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     gap: 2.5rem;
+    height: 100vh;
+    margin-top: 15rem; /* Adjust the margin as needed */
+}
+
+.portfolio-box {
+    flex: 0 1 30%;
+    /* Your other box styles */
 }
 
 .portfolio-container .portfolio-box {
